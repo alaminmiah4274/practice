@@ -12,3 +12,10 @@ def contact(request):
 
 def show_task(request):
 	return HttpResponse("I want to show my tasks. But I do not have !!")
+
+
+
+def show_specific_task(request, id):
+	print("id: ", 1)
+	print("id type: ", type(id))
+	return HttpResponse(f"this is specific task or dynamic url page no - {id}")
