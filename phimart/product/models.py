@@ -1,6 +1,12 @@
 from django.db import models
 
 
+"""
+command for laoding data:
+python3 manage.py loaddata fixtures/product_data.json 
+"""
+
+
 # Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length=100)
